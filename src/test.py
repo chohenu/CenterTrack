@@ -43,7 +43,7 @@ class PrefetchDataset(torch.utils.data.Dataset):
         image, scale, input_meta)
     ret = {'images': images, 'image': image, 'meta': meta}
     if 'frame_id' in img_info and img_info['frame_id'] == 1:
-      ret['is_first_frame'] = 1
+      ret['is_first_fr습ame'] = 1
       ret['video_id'] = img_info['video_id']
     return img_id, ret
 
